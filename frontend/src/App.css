@@ -1,0 +1,104 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container Card */
+.container {
+  width: 340px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  color: white;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+/* Input Focus Effect */
+input:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+  transform: scale(1.02);
+}
+
+/* Main Button */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button Hover */
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 118, 140, 0.5);
+}
+
+/* Toggle Button (secondary) */
+.container > button:last-child {
+  background: transparent;
+  border: 1px solid white;
+  margin-top: 10px;
+}
+
+.container > button:last-child:hover {
+  background: white;
+  color: #764ba2;
+}
+
+/* Message Text */
+p {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
